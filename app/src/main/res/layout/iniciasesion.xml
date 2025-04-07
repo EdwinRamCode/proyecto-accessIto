@@ -7,7 +7,7 @@
 
         <View
             android:id="@+id/rectanguloHorizontalAzul"
-            android:layout_width="412dp"
+            android:layout_width="wrap_content"
             android:layout_height="71dp"
             android:background="#0e8bff"
             app:layout_constraintEnd_toEndOf="parent"
@@ -17,7 +17,7 @@
         <View
             android:id="@+id/rectanguloVerticalAzul"
             android:layout_width="98dp"
-            android:layout_height="660dp"
+            android:layout_height="wrap_content"
             android:background="#0e8bff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
 
         <TextView
             android:id="@+id/accesIto"
-            android:layout_width="wrap_content"
+            android:layout_width="98dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="#FFFFFF"

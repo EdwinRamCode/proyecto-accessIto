@@ -18,6 +18,14 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+    //se agrega ViewBinding
+    /*Con esto se elimina el findViewById() y se accede
+    a las vistas o componentes directamente con
+     binding.nombrevista
+     Es mas rapido que el findViewById()*/
+       // buildFeatures{
+         //   viewBinding=true
+        //}
 
     buildTypes {
         release {

@@ -19,7 +19,7 @@
     <View
         android:id="@+id/rectanguloVerticalAzul"
         android:layout_width="98dp"
-        android:layout_height="660dp"
+        android:layout_height="wrap_content"
         android:background="#0e8bff  "
         android:backgroundTint="#0e8bff  "
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,8 +45,8 @@
 
     <TextView
         android:id="@+id/accesIto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50sp"
+        android:layout_height="560sp"
         android:gravity="center"
         android:textColor="#FFFFFF"
         android:textSize="60sp"

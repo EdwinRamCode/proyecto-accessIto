@@ -2,11 +2,13 @@ package com.example.gui
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -36,9 +38,71 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
 
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main1)
+
+
+        val botonEstudiante = findViewById<Button>(R.id.botonEstudiante)
+        val botonDocente = findViewById<Button>(R.id.botonDocente)
+
+        val botonAdministrador = findViewById<Button>(R.id.botonAdministrador)
+
+        botonEstudiante.setOnClickListener {
+            setContentView(R.layout.iniciasesion)
+            val botonIngresar=findViewById<Button>(R.id.ingresarButton)
+            botonIngresar.setOnClickListener{
+                setContentView(R.layout.usuarioqr)
+                val botonDarAlta=findViewById<Button>(R.id.botonAlta)
+                val botonSalir=findViewById<Button>(R.id.botonSalir)
+                botonSalir.setOnClickListener{
+                    setContentView(R.layout.activity_main1)
+                }
+                botonDarAlta.setOnClickListener{
+                    setContentView(R.layout.agregarfamiliares)
+                    val botonAgregarFam=findViewById<Button>(R.id.btnAgregarFam)
+                    val botonHome=findViewById<Button>(R.id.botonHome)
+                    botonHome.setOnClickListener{
+                        setContentView(R.layout.usuarioqr)
+                    }
+                    botonAgregarFam.setOnClickListener{
+                        setContentView(R.layout.estudiantedaralta)
+                        val botonSeleccion=findViewById<Button>(R.id.botonSeleccionar)
+                        botonSeleccion.setOnClickListener{
+                            setContentView(R.layout.identificacion)
+                            val botonGuardar=findViewById<Button>(R.id.botonGuardar)
+                            botonGuardar.setOnClickListener{
+                                setContentView(R.layout.estudiantedaralta)
+                                val butonSolicitarAcceso=findViewById<Button>(R.id.botonSolicitar)
+                                butonSolicitarAcceso.setOnClickListener{
+                                    setContentView(R.layout.agregarfamiliares)
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+
+        botonAdministrador.setOnClickListener{
+            setContentView(R.layout.usuarioqr)
+            val botondardeAlta=findViewById<Button>(R.id.botonAlta)
+            botondardeAlta.setOnClickListener{
+                setContentView(R.layout.estudiantedaralta)
+            }
+        }
+
+
+
+
+
+
+
         /*
                 var db : DataBase
         db = Room.databaseBuilder(this,DataBase::class.java,"PruebasAcces").build();
@@ -51,6 +115,11 @@ class MainActivity : ComponentActivity() {
             }
         }.start()
          */
+    //Prueba de funcionamiento del boton
+
+
+
+
 
         //En segundo plano
         GlobalScope.launch(Dispatchers.Main) {
@@ -205,7 +274,7 @@ class MainActivity : ComponentActivity() {
 
         }
 
-        enableEdgeToEdge()
+       /* enableEdgeToEdge()
         setContent {
             GUITheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
@@ -215,11 +284,14 @@ class MainActivity : ComponentActivity() {
                     )
                 }
             }
-        }
+        }*/
     }
+
 }
 
-@Composable
+
+
+/*@Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
@@ -233,4 +305,6 @@ fun GreetingPreview() {
     GUITheme {
         Greeting("Android")
     }
-}
+
+    }*/
+

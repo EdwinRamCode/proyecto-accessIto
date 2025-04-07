@@ -6,7 +6,7 @@ import java.sql.Connection;
 public class Instancia {
     public static Instancia instancia = null;
     private static String user = "postgres";
-    private static String password = "carloscras15";
+    private static String password = "LimaGlinux811#";
     private static String nameDataBase = "accesito";
     private static String jdbc = "jdbc:postgresql://localhost:5432/" + nameDataBase;
     private Instancia(){}
