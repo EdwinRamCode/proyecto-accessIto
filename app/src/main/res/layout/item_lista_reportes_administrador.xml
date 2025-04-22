@@ -6,17 +6,17 @@
     android:paddingHorizontal="2dp"
     android:background="?android:attr/selectableItemBackground">
 
-    <!-- ID Solicitud (1.5 weight) -->
+    <!-- ID Solicitud (1 weight) -->
     <TextView
         android:id="@+id/tvIdReporte"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1.5"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:textSize="14sp"/>
 
-    <!-- Fecha (1 weight) -->
+    <!-- Usuario Administracion (1 weight) -->
     <TextView
         android:id="@+id/tvUsuarioAdministracion"
         android:layout_width="0dp"
@@ -25,7 +25,25 @@
         android:gravity="center"
         android:textSize="14sp"/>
 
-    <!-- Estatus (1 weight) -->
+    <!-- Nombre del reporte (1 weight) -->
+    <TextView
+        android:id="@+id/tvNombreReporte"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14sp"/>
+
+    <!-- Descripcion del reporte (1 weight) -->
+    <TextView
+        android:id="@+id/tvDescripcionReporte"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14sp"/>
+
+    <!-- Fecha (1 weight) -->
     <TextView
         android:id="@+id/tvFecha"
         android:layout_width="0dp"
@@ -39,7 +57,7 @@
         android:id="@+id/btnAccionAbrir"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_weight="0.8"
+        android:layout_weight="1"
         android:text="ABRIR"
         android:textAllCaps="false"
         android:backgroundTint="@color/material_dynamic_neutral70"
