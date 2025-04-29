@@ -40,6 +40,22 @@
             android:textColor="@android:color/black"
             android:gravity="center"/>
 
+       <!-- - <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NOMBRE"
+            android:textColor="@android:color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DESCRIPCION"
+            android:textColor="@android:color/black"
+            android:gravity="center"/> -->
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
