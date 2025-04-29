@@ -104,12 +104,6 @@ class DarAltaUsuarioAdminActivity : AppCompatActivity() {
 
         }
 
-        //Botón para eliminar
-        findViewById<Button>(R.id.btnEliminar).setOnClickListener {
-            val intent = Intent(this, EliminarAdminActivity::class.java)
-            startActivity(intent)
-        }
-
         //Botón para HOME, regresa a donde muestra el qr del usuario, es decir a la administrador activity
         findViewById<Button>(R.id.btnSalir).setOnClickListener {
             // Crear intent con flags para limpiar la pila

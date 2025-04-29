@@ -149,6 +149,17 @@ class MainActivity : ComponentActivity() {
             "Ingenieria Sistemas Computacionales"
         )
 
+        val seguridad = Usuario(
+            "Cristiano Ronaldo",
+            false,
+            "cr7@gmail.com",
+            "cr7",
+            "2721813098",
+            null,
+            "seguridad",
+            ""
+        )
+
 
         GlobalScope.launch(Dispatchers.Main) {
             withContext(Dispatchers.IO) {
@@ -167,6 +178,8 @@ usuario.insert(nuevoUsuario)
                 usuario.insert(familiar)
 
                 usuario.insert(invitado)
+
+                usuario.insert(seguridad)
 }}
 
 

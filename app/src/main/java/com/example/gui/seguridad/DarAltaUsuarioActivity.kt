@@ -105,12 +105,7 @@ class DarAltaUsuarioActivity : AppCompatActivity() {
             }
 
         }
-
-        //Botón para eliminar
-        findViewById<Button>(R.id.btnEliminar).setOnClickListener {
-            val intent = Intent(this, EliminarSeguridadActivity::class.java)
-            startActivity(intent)
-        }
+        
 
         //Botón para salir
         findViewById<Button>(R.id.btnSalir).setOnClickListener {
